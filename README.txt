@@ -1,16 +1,18 @@
-測試環境為 CentOS 
+The test environment is CentOS7 
 
-使用的編譯器為 Python3.7
+The compiler used is Python 3.7
 
-執行方法：
+Execution command.
 
-ex: python STG.py input1.kiss output1.kiss output1.dot
+```
+python STG.py input1.kiss output1.kiss output1.dot
+```
 
+If you want to visualize the output dot file 
 
-如果想視覺化 該output dot檔 
+Install graphviz in CentOS environment and run command:
 
-在 CentOS 環境安裝 graphviz:
-  
-指令: sudo yum install graphviz
-
-執行方法： dot -T png output1.dot > output1.png
+```
+sudo yum install graphviz
+dot -T png output1.dot > output1.png
+```
